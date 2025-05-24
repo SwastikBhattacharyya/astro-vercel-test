@@ -1,0 +1,10 @@
+---
+const date = await new Promise((resolve) => setTimeout(resolve, 1000)).then(
+    () => new Date().toLocaleString(),
+);
+---
+
+<div>
+    <h1>Bar</h1>
+    <p>{date}</p>
+</div>
